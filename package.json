@@ -1,5 +1,8 @@
 {
   "name": "tokutei-site",
+  "scripts": {
+    "build": "bun run build.ts"
+  },
   "dependencies": {
     "hono": "^4.2.3"
   }
