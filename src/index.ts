@@ -3,7 +3,7 @@ import { Hono } from "hono"
 const app = new Hono()
 
 app.get("/", (c) => {
-  return c.text("hello")
+  return c.text(`Your IP address is ${c.req.header('cf-connecting-ip')} or ${c.req.header('x-real-ip')}`)
 })
 
 app.get("/ip", (c) => {
