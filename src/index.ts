@@ -8,7 +8,7 @@ app.get("/", (c) => {
 
 app.get("/ip", (c) => {
   const headerObj = {}
-  for (const [key, value] of c.req.headers.entries()) {
+  for (const [key, value] of c.req.raw.headers.entries()) {
     headerObj[key] = value
   }
   return c.json(headerObj)
