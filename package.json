@@ -1,0 +1,6 @@
+{
+  "name": "tokutei-site",
+  "dependencies": {
+    "hono": "^4.2.3"
+  }
+}
