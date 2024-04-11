@@ -1,3 +1,5 @@
+await Bun.$`bun install`
+
 const result = await Bun.build({
   entrypoints: ["./src/index.ts"],
   outdir: "public",
