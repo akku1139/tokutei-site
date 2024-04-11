@@ -8,4 +8,4 @@ app.get("/ip", (c) => {
     headerObj[key] = value
   }
   return c.json(headerObj)
-}
+})
