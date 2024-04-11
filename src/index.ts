@@ -2,6 +2,10 @@ import { Hono } from "hono"
 
 const app = new Hono();
 
+app.get("/", (c) => {
+  return c.text("hello")
+}
+
 app.get("/ip", (c) => {
   const headerObj = {}
   for (const [key, value] of res.headers.entries()) {
