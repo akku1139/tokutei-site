@@ -1,5 +1,5 @@
 const result = await Bun.build({
-  entrypoints: ["./src/index.js"],
+  entrypoints: ["./src/index.ts"],
   outdir: "public",
   naming: "[dir]/_worker.js",
   splitting: false,
