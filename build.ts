@@ -6,6 +6,8 @@ const result = await Bun.build({
   minify: Bun.env.NODE_ENV === "production",
 })
 
+console.log(result.logs)
+
 if (!result.success) {
   throw new Error("Build failed")
 }
