@@ -13,3 +13,5 @@ app.get("/ip", (c) => {
   }
   return c.json(headerObj)
 })
+
+export default app
